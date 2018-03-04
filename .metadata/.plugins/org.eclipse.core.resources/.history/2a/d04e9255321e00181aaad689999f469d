@@ -1,0 +1,49 @@
+package as2;
+
+public class EqTriangle extends Triangle
+{
+	private double side;
+	private String type = "Equilateral Triangle";
+	
+	public EqTriangle()
+	{
+		this.setSide(1);
+	}
+	
+	public EqTriangle(double side)
+	{
+		super(side, side, side);
+	}
+
+	public double getSide() {
+		return side;
+	}
+
+	public void setSide(double side) {
+		this.side = side;
+	}
+	/*
+	@Override
+	public double getArea()
+	{
+		double area=1;
+		// area of a triangle
+		return area;
+	}
+	@Override
+	public double getPerimeter()
+	{
+		double perimeter = side * 3;
+		
+		return perimeter;
+	}
+	@Override
+	public String getType()
+	{
+		return this.type;
+	}
+
+	
+	
+	*/
+}

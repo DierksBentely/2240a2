@@ -1,0 +1,17 @@
+package as2;
+import java.util.*;
+public class Main 
+{
+	public static void main(String[] args)
+	{
+		GeoObject ObjectArray [] = new GeoObject [4];
+		
+		System.out.println("meow");
+	}
+	
+//	private static void printAreaAndPerimiter(GeoObject gObject)
+	
+		
+	
+			
+}

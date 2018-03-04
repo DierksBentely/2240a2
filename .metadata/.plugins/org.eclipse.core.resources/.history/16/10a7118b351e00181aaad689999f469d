@@ -1,0 +1,43 @@
+package as2;
+import java.util.Arrays;
+public class Main 
+{
+	public static void main(String[] args)
+	{
+		GeoObject[] ObjectArray = new GeoObject [5];
+		
+		Circle circle = new Circle(5,5,5);
+		Triangle triangle = new Triangle(5,5,5);
+		EqTriangle eqTriangle = new EqTriangle(5);
+		Rectangle rectangle = new Rectangle (5,5);
+		Square square = new Square (5);
+		
+		ObjectArray[0] = (circle);
+		ObjectArray[1] = (eqTriangle);
+		ObjectArray[2] = (triangle);
+		ObjectArray[3] = (rectangle);
+		ObjectArray[4] = (square);
+		
+		circle.setColor("green");
+		circle.setFilled(true);
+		
+		for (int i = 0; i < ObjectArray.length; i++)
+		{
+			printAreaAndPerimeter(ObjectArray[i]);
+		}
+		
+	}
+	
+	private static void printAreaAndPerimeter(GeoObject gObject)
+	{
+		System.out.println("the area of this " + gObject.getType() + " is "  + gObject.getArea());
+		System.out.println(gObject.toString());
+		System.out.println("the perimeter of " + gObject.getType() + " is " + gObject.getPerimeter() + "\n");
+
+		
+	}
+	
+		
+	
+			
+}

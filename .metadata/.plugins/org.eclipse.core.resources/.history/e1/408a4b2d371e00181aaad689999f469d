@@ -1,0 +1,49 @@
+package as2;
+import java.util.Random;
+public class Main 
+{
+	public static void main(String[] args)
+	{
+		GeoObject[] ObjectArray = new GeoObject [5];
+		
+		Circle circle = new Circle(5,5,5);
+		Triangle triangle = new Triangle(5,5,5);
+		EqTriangle eqTriangle = new EqTriangle(5);
+		Rectangle rectangle = new Rectangle (5,5);
+		Square square = new Square (5);
+		Random random = new Random();
+		String[] availColors = {"green", "blue" , "red" , "yellow" , "orange"};
+		
+		ObjectArray[0] = (circle);
+		ObjectArray[1] = (eqTriangle);
+		ObjectArray[2] = (triangle);
+		ObjectArray[3] = (rectangle);
+		ObjectArray[4] = (square);
+		
+		for (int i = 0; i < ObjectArray.length; i++)
+		{
+			// some random stuff to make it filled or not, and with what color
+			int x= random.nextInt(availColors.length);
+			ObjectArray[i].setColor(availColors[x]);
+			boolean y = random.nextBoolean();
+			
+			ObjectArray[i].setFilled(y);
+			printAreaAndPerimeter(ObjectArray[i]);
+		}
+		
+	}
+	
+	private static void printAreaAndPerimeter(GeoObject gObject)
+	{
+		String.format("%02d");
+		System.out.println(gObject.toString());
+		System.out.println("the area of this " + gObject.getType() + " is "  + gObject.getArea());
+		System.out.println("the perimeter of this " + gObject.getType() + " is " + gObject.getPerimeter() + "\n");
+
+		
+	}
+	
+		
+	
+			
+}

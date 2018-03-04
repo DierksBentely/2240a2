@@ -1,0 +1,51 @@
+package as2;
+
+public class Circle extends GeoObject
+{
+	private double x, y;
+	// specify the center of the circle
+	private double radius;
+	// implement get method to calculate
+	
+
+	public Circle()
+	{
+		this.x = 0;
+		this.y = 0;
+		this.radius = 1;
+	}
+	
+	public Circle(double x, double y, double radius)
+	{
+		this.x = x;
+		this.y = y;
+		this.radius = radius;
+	}
+	
+	public double getRadius(
+			) {
+		return radius;
+	}
+
+	public void setRadius(double radius) 
+	{
+		this.radius = radius;
+	}
+		
+	@Override
+	public double getArea()
+	{
+		// ((pi)r^2)
+		return Math.PI*(radius * radius);
+	}
+	
+	@Override
+	public double getPerimeter()
+	{
+		// 2(pi)r
+		return 2*Math.PI*radius;
+	}
+
+
+
+}

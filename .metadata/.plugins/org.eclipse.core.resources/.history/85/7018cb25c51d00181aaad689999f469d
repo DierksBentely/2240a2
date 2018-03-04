@@ -1,0 +1,17 @@
+package as2;
+
+public class EqTriangle extends Triangle
+{
+	private double side;
+	
+	public EqTriangle()
+	{
+		this.side = 1;
+	}
+	
+	public EqTriangle(double side)
+	{
+		super(side, side, side);
+	}
+	
+}

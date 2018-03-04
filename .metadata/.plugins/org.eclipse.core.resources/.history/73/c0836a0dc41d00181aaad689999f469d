@@ -1,0 +1,12 @@
+package as2;
+
+public class EqTriangle extends Dicks
+{
+	private double side;
+	
+	public EqTriangle()
+	{
+		this.side = 1;
+	}
+	
+}

@@ -1,0 +1,15 @@
+package as2;
+using java.util.*;
+public class Main 
+{
+	public static void main(String[] args)
+	{
+		GeoObject ObjectArray [] = new GeoObject [4];
+	}
+	
+	private static void printAreaAndPerimiter(GeoObject gObject)
+	{
+		
+	}
+			
+}

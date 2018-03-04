@@ -1,0 +1,43 @@
+package as2;
+
+public class Square extends Rectangle
+{
+	private double side;
+	private String type = "Square";
+	public Square()
+	{
+		side =1;
+	}
+	
+	public Square(double side)
+	{
+		super(side,side);
+	}
+	
+	@Override
+	public double getArea()
+	{
+		double area;
+		
+		area = side*side;
+		
+		return area;
+	}
+	
+	@Override
+	public double getPerimeter()
+	{
+		double perimeter;
+		
+		perimeter = (side + side) *2;
+		
+		return perimeter;
+	}
+	
+	public String getType()
+	{
+		return this.type;
+	}
+
+
+}

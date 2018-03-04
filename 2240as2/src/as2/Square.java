@@ -1,0 +1,46 @@
+package as2;
+//rectangle triangle class subclass of geo object and rectangle classes
+public class Square extends Rectangle
+{
+	private double side;
+	private String type = "Square";
+	// no arg constructor base case
+	public Square()
+	{
+		side =1;
+	}
+	
+	// constructor calling super class with the side to make a square
+	public Square(double side)
+	{
+		super(side,side);
+	}
+	
+	// methods for printing out the area and the perimeter
+	@Override
+	public double getArea()
+	{
+		double area;
+		
+		area = getSide1()*getSide2();
+		return area;
+	}
+	
+	@Override
+	public double getPerimeter()
+	{
+		double perimeter;
+		
+		perimeter = (getSide1() + getSide2()) *2;
+		
+		return perimeter;
+	}
+	// implemented method for making it easier to identify which object I am referring to in print out
+
+	public String getType()
+	{
+		return this.type;
+	}
+
+
+}

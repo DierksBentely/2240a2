@@ -1,0 +1,26 @@
+package as2;
+
+public class Square extends Rectangle
+{
+	private double side;
+	private String type = "Square";
+
+	public Square()
+	{
+		side =1;
+	}
+	
+	public Square(double side)
+	{
+		super(side,side);
+	}
+	
+	
+			
+	public String getType()
+	{
+		return this.type;
+	}
+
+
+}
